@@ -57,7 +57,7 @@
     margin: 24px 0 6px;
   }
   p, li { font-size: 16px; }
-  ul { padding-left: 22px; }
+  ul, ol { padding-left: 22px; }
   li { margin-bottom: 6px; }
   a { color: var(--accent); }
   hr {
@@ -94,37 +94,36 @@
 
   <span class="brand">Pocky</span>
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: July 25, 2026</p>
+  <p class="updated">Last updated: October 12, 2026</p>
 
   <p class="intro">
-    Pocky is a personal money management app. Your financial life is private, and we
-    built Pocky that way. We never connect to your bank, we never sell your data, and
-    we never show you ads. This policy explains exactly what we collect and why.
+    Pocky is a personal money management app. Your financial life is private, and we built Pocky that way.
+    We never connect to your bank, we never sell your data, and we never show you ads.
+    This policy explains exactly what we collect and why.
   </p>
 
   <h2>1. Who we are</h2>
   <p>
-    Pocky ("we", "us") is the developer of the Pocky mobile application. If you have
-    any question about this policy or about your data, you can reach us at
+    Pocky ("we", "us") is the developer of the Pocky mobile application, published by Emil Ashurov.
+    If you have any question about this policy or about your data, you can reach us at
     <a href="mailto:pocky.app1@gmail.com">pocky.app1@gmail.com</a>.
   </p>
 
   <h2>2. What we collect</h2>
-
   <h3>Information you give us</h3>
   <ul>
-    <li><strong>Account details.</strong> Your email address and an encrypted password, or the identifier provided by a sign-in provider if you use one.</li>
+    <li><strong>Account details.</strong> Your email address, display name and an encrypted password, or the identifier provided by a sign-in provider (such as Sign in with Apple on iPhone) if you use one.</li>
     <li><strong>Financial entries.</strong> Amounts, categories, descriptions and dates for the transactions you record, plus savings goals, budgets, and the cash, investment and debt figures you enter for net worth tracking.</li>
-    <li><strong>Onboarding answers.</strong> Optional details such as age range and occupation, used to tailor your plan.</li>
+    <li><strong>Onboarding answers.</strong> Details you share during setup to tailor your plan, such as your first name, date of birth (optional), age group, occupation, an estimate of your monthly income and spending, your money goals and the spending areas you want to work on.</li>
     <li><strong>Preferences.</strong> Currency, language, notification settings and similar choices.</li>
   </ul>
-
   <h3>Information created as you use Pocky</h3>
   <ul>
     <li>Progress data such as level, experience points, coin balance, streaks, completed habits and completed lessons.</li>
     <li>Basic technical information needed to run the app reliably, such as device type, operating system version and app version.</li>
+    <li><strong>Anonymous usage statistics.</strong> Which screens of the app are opened, together with a random identifier created for your installation of the app. This does not include your name, email or financial entries.</li>
+    <li><strong>Crash reports and diagnostic logs.</strong> When the app has an error, technical details about the error and the app state, so we can fix it. We do not intentionally include your financial entries in these reports.</li>
   </ul>
-
   <h3>What we never collect</h3>
   <ul>
     <li>We do not connect to your bank, credit cards, or any external financial institution.</li>
@@ -142,90 +141,84 @@
     <li>To fix bugs and improve the app.</li>
   </ul>
   <p>
-    We do not use your financial data for advertising, we do not build advertising
-    profiles, and we do not sell or rent your personal information to anyone.
+    We do not use your financial data for advertising, we do not build advertising profiles,
+    and we do not sell or rent your personal information to anyone.
   </p>
 
   <h2>4. Who processes your data</h2>
   <p>
-    We rely on a small number of service providers to run Pocky. They process data on
-    our behalf and are bound by their own agreements and privacy commitments.
+    We rely on a small number of service providers to run Pocky. They process data on our behalf
+    and are bound by their own agreements and privacy commitments.
   </p>
   <ul>
     <li><strong>Supabase</strong> hosts our database and handles account authentication. Your app data is stored there.</li>
-    <li><strong>RevenueCat</strong> manages subscription status and entitlements.</li>
+    <li><strong>RevenueCat</strong> manages subscription status and entitlements. It receives an anonymous account identifier and your purchase history.</li>
+    <li><strong>Anthropic</strong> (Claude AI) writes your weekly insight summaries. To do this it receives your first name and pre-calculated weekly totals, such as spending per category, your daily budget and your streak. It does not receive your email address or your individual transactions, and the summaries are for general information only. They are not financial, tax or investment advice.</li>
+    <li><strong>Sentry</strong> and <strong>Anything</strong> (the platform Pocky is built on) receive crash reports, diagnostic logs and the anonymous usage statistics described above, so we can keep the app working.</li>
     <li><strong>Apple App Store</strong> and <strong>Google Play</strong> process all payments and billing.</li>
   </ul>
   <p>
-    We may also disclose information if we are legally required to do so, or where it
-    is necessary to protect our rights or the safety of others.
+    We may also disclose information if we are legally required to do so, or where it is necessary
+    to protect our rights or the safety of others.
   </p>
 
   <h2>5. Where your data is stored</h2>
   <p>
-    Our servers are located in the United States. If you use Pocky from outside the
-    United States, your information will be transferred to and processed there. By
-    using Pocky you consent to this transfer.
+    Our servers are located in the United States. If you use Pocky from outside the United States,
+    your information will be transferred to and processed there. By using Pocky you consent to this transfer.
   </p>
 
   <h2>6. Security</h2>
   <p>
-    Data is encrypted in transit using TLS and encrypted at rest by our database
-    provider. Your session token is stored on your device using the operating system's
-    secure storage, the iOS Keychain or the Android Keystore. Access controls are
-    enforced at the database level so that your records are only ever readable by your
-    own account.
+    Data is encrypted in transit using TLS and encrypted at rest by our database provider.
+    Your session token is stored on your device using the operating system's secure storage,
+    the iOS Keychain or the Android Keystore. Access controls are enforced at the database level
+    so that your records are only ever readable by your own account.
   </p>
-  <p>
-    No system is perfectly secure. We work to protect your information, but we cannot
-    guarantee absolute security.
-  </p>
+  <p>No system is perfectly secure. We work to protect your information, but we cannot guarantee absolute security.</p>
 
   <h2>7. Data retention</h2>
   <p>
-    We keep your data for as long as your account exists. If you delete your account,
-    your personal data and financial records are permanently deleted. Some records may
-    be retained for a limited period where required by law or for fraud prevention.
+    We keep your data for as long as your account exists. If you delete your account, your personal data
+    and financial records are permanently deleted. Copies in routine backups and technical logs are removed
+    within 30 days. Some records may be retained for a limited period where required by law or for fraud prevention.
   </p>
 
   <h2>8. Your rights and choices</h2>
   <ul>
     <li><strong>Access and correction.</strong> You can view and edit your information at any time inside the app.</li>
-    <li><strong>Deletion.</strong> You can delete your account and all associated data from Settings. This is permanent and cannot be undone.</li>
+    <li><strong>Deletion.</strong> You can delete your account and all associated data from Settings, or by following the steps on our <a href="delete-account.html">account deletion page</a>. This is permanent and cannot be undone. Deleting your account does not cancel a subscription; cancel it in your App Store or Google Play account.</li>
     <li><strong>Notifications.</strong> You can turn reminders off in Settings or in your device settings at any time.</li>
     <li><strong>Requests.</strong> Depending on where you live, you may have additional rights under laws such as the GDPR or the CCPA, including the right to request a copy of your data or to object to certain processing. Contact us and we will respond within 30 days.</li>
   </ul>
-  <p>
-    We will never discriminate against you for exercising any of these rights.
-  </p>
+  <p>We will never discriminate against you for exercising any of these rights.</p>
 
   <h2>9. Subscriptions</h2>
   <p>
-    Pocky is a paid subscription app. Billing is handled by the Apple App Store or
-    Google Play, and is subject to their terms and privacy policies. We receive only
-    your subscription status, never your payment details. You can manage or cancel
-    your subscription in your App Store or Google Play account settings.
+    Pocky is free to download. Using the app requires a Pocky Premium subscription, which starts with a free trial.
+    Billing is handled by the Apple App Store or Google Play, and is subject to their terms and privacy policies. We receive only your
+    subscription status, never your payment details. You can manage or cancel your subscription in your
+    App Store or Google Play account settings.
   </p>
 
   <h2>10. Children</h2>
   <p>
-    Pocky is not directed at children. We do not knowingly collect personal
-    information from anyone under 13, or under 16 where a higher age applies by local
-    law. If you believe a child has provided us with personal information, contact us
-    and we will delete it.
+    Pocky is intended for adults aged 18 and older and is not directed at children.
+    We do not knowingly collect personal information from anyone under 18. If you
+    believe a child has provided us with personal information, contact us and we will
+    delete it.
   </p>
 
   <h2>11. Changes to this policy</h2>
   <p>
-    We may update this policy from time to time. When we do, we will change the date
-    at the top of this page. If the changes are significant, we will notify you in the
-    app. Continued use of Pocky after an update means you accept the revised policy.
+    We may update this policy from time to time. When we do, we will change the date at the top of this page.
+    If the changes are significant, we will notify you in the app. Continued use of Pocky after an update
+    means you accept the revised policy.
   </p>
 
   <h2>12. Contact</h2>
   <p>
-    Questions, requests, or concerns:
-    <a href="mailto:pocky.app1@gmail.com">pocky.app1@gmail.com</a>.
+    Questions, requests, or concerns: <a href="mailto:pocky.app1@gmail.com">pocky.app1@gmail.com</a>.
     We respond to all requests within 30 days.
   </p>
 
